@@ -14,7 +14,7 @@ pipeline {
     }
     stage('Deliver') {
       steps {
-        sh 'pwd | ls -la'
+        sh 'node server.js'
       }
     }
   }
