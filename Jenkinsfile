@@ -14,6 +14,7 @@ pipeline {
     }
     stage('Deliver') {
       steps {
+        sh 'cd /var/jenkins_home/workspace/cccSmartbrainBackend_master'
         sh 'node index.js'
       }
     }
